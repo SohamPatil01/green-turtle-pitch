@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events, Bookings &amp; Entry for The Green Turtle | AzeelaAI Labs Proposal</title>
+  <meta name="description" content="An interactive proposal from AzeelaAI Labs for The Green Turtle: one connected platform for event bookings, front desk sales, QR entry and live reporting.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#e3eedf">
+  <meta property="og:title" content="Events, Bookings &amp; Entry for The Green Turtle | AzeelaAI Labs Proposal">
+  <meta property="og:description" content="Every event, every family, every smile, easily managed.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231f7a46%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-x-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM13 5v2M13 11v2M13 17v2"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M2 9a15 15 0 0 1 20 0M12 20h.01"/></symbol>
+    <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="m2 2 20 20M8.5 16a5 5 0 0 1 7 0M12 20h.01M5 12.5a10 10 0 0 1 3.3-2.2M14 8.2a15 15 0 0 1 8 2.8M2 9a15 15 0 0 1 4-2.6M19 12.5a10 10 0 0 0-2.5-1.9"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7zM2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></symbol>
+    <symbol id="i-door" viewBox="0 0 24 24"><path d="M13 4h3a2 2 0 0 1 2 2v14M2 20h20M13 2l-9 2v16h9zM10 12v.01"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 4 4 5-6"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.7-9h1.8a4.5 4.5 0 1 1 0 9z"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h3M20 17v4"/></symbol>
+    <symbol id="i-rupee" viewBox="0 0 24 24"><path d="M6 3h12M6 8h12M6 13l8.5 8M6 13h3a4 4 0 0 0 0-8"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+    <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+    <symbol id="i-sync" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1zM12 15l-3-3a22 22 0 0 1 2-3.9A13 13 0 0 1 22 2c0 2.7-.8 7.5-6 11a22 22 0 0 1-4 2zM9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17M16 7h6v6"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 2h6M10 2v6L4.5 18A2 2 0 0 0 6.3 21h11.4a2 2 0 0 0 1.8-3L14 8V2M7 15h10"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><path d="M3.9 12a4 4 0 0 1 1.3-3.2 4 4 0 0 1 4.3-4.3A4 4 0 0 1 12 3a4 4 0 0 1 2.5 1.5 4 4 0 0 1 4.3 4.3A4 4 0 0 1 20.1 12a4 4 0 0 1-1.3 3.2 4 4 0 0 1-4.3 4.3A4 4 0 0 1 12 21a4 4 0 0 1-2.5-1.5 4 4 0 0 1-4.3-4.3A4 4 0 0 1 3.9 12z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.5 2 8 0 5.5-4.8 10-10 10zM2 21c0-3 1.9-5.4 5.7-6.9C9.6 13.4 12 13 14 13"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.7 0-3 .8-4.5 2.5C10.5 3.8 9.2 3 7.5 3A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5zM4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m6 3 14 9-14 9z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></symbol>
+  </defs>
+</svg>
+
+<div id="deck">
+  <header class="d-top">
+    <div class="d-progress" aria-hidden="true"><i id="d-prog"></i></div>
+    <div class="d-brand"><i><svg class="i"><use href="#i-leaf"/></svg></i> The Green Turtle <span style="font-weight:600;color:var(--grey)">x AzeelaAI Labs</span></div>
+    <div class="d-tools">
+      <div class="themes" id="themes" role="group" aria-label="Colour theme"></div>
+      <nav class="d-story" id="d-story" aria-label="Presentation chapters"></nav>
+      <span class="d-count tnum" id="d-count" aria-live="polite">01 / 25</span>
+      <button class="tool" id="btn-notes" aria-label="Open speaker notes" title="Speaker notes (N)">Notes</button>
+      <button class="tool" id="btn-ov" aria-label="Show all slides"><svg class="i"><use href="#i-layers"/></svg> Slides</button>
+      <button class="tool" id="btn-full" aria-label="Toggle full screen">Full screen</button>
+    </div>
+  </header>
+
+  <div class="viewport">
+    <main class="stage" id="stage">
+
+<!-- 1. TITLE -->
+<section class="slide navy" id="title" data-title="Introduction"><svg class="arcs" viewBox="0 0 600 600" aria-hidden="true"><circle cx="400" cy="300" r="260"/><circle cx="400" cy="300" r="180"/><path d="M400 40v520M140 300h520"/></svg>
+  <div class="s-body split">
+    <div class="hero-copy">
+      <div class="kick a">A proposal for The Green Turtle<br>Events, bookings and entry, in one place</div>
+      <h1 class="t1 a" style="--n:1">Every event.<br>Every family.<br>Every smile.<br><span class="outline">Easily managed.</span></h1>
+      <p class="p a" style="--n:2">One simple platform for Annual Day, Summer Camps, workshops and open houses. Parents book online, the front desk books from the same list, and the gate knows who is expected.</p>
+      <div class="btns a" style="--n:3"><button class="btn white" data-go="next">Explore how it works <svg class="i"><use href="#i-arrow-right"/></svg></button><button class="btn line-w" data-go="problem">See the challenge</button></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="ha" style="left:0;top:18px;z-index:5"><div class="float" style="--fd:.6s"><div class="card mini-dash a" style="--n:3">
+        <div class="lbl">Live event dashboard <span class="live">LIVE</span></div>
+        <div class="big tnum" data-count="286">0</div><div class="sub">seats booked so far</div>
+        <div class="bars"><i style="--h:30%"></i><i style="--h:48%"></i><i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:54%"></i><i style="--h:78%"></i><i style="--h:70%"></i><i style="--h:92%"></i></div>
+      </div></div></div>
+      <div class="ha" style="right:0;top:0;z-index:4"><div class="float" style="--fd:.2s"><div class="phone a" style="--n:2;transform:scale(.62);transform-origin:top right;margin-bottom:-226px"><div class="phone-screen"><div class="stack" style="padding:12px 14px;text-align:center">
+        <div class="tick pop"><svg class="i"><use href="#i-check"/></svg></div>
+        <div class="s-title">Booking confirmed</div><div class="s-sub">1 x Family pack, Annual Day 2027</div>
+        <div class="s-card"><div class="s-row"><div style="text-align:left"><div class="s-sub" style="font-weight:700;text-transform:uppercase;font-size:8.5px">Reference</div><div style="font-family:monospace;font-weight:700;font-size:11px">GT-2048-7731</div></div><span class="qr" data-seed="GT-2048-7731" data-size="56"></span></div></div>
+        <div class="s-btn"><svg class="i"><use href="#i-download"/></svg> Download pass</div>
+      </div></div></div></div></div>
+      <div class="ha" style="left:6px;bottom:18px;width:300px;z-index:6"><div class="float" style="--fd:1.1s"><div style="transform:rotate(-5deg)" class="a"><div class="ticket">
+        <div class="ticket-top"><div class="s-row" style="align-items:flex-start"><div><div class="k">Admit family</div><div class="n">Annual Day 2027</div></div><span class="cat">FAMILY</span></div></div><div class="perf"></div>
+        <div class="ticket-bot"><div><div class="k">Booking reference</div><div class="ref">GT-2048-7731</div><span class="pill ok" style="margin-top:6px">Confirmed</span></div><span class="qr" data-seed="GT-2048-7731" data-size="62"></span></div>
+      </div></div></div></div>
+      <div class="ha" style="right:10px;bottom:30px;z-index:7"><div class="float" style="--fd:.9s"><div class="scan-card a" style="--n:4">
+        <div class="scan-view" style="height:84px"><span class="qr" data-seed="scan" data-size="50"></span><span class="scan-line"></span></div>
+        <div class="result ok" style="margin-top:8px;padding:7px 9px;font-size:10px"><svg class="i" style="font-size:16px"><use href="#i-check-circle"/></svg><span>Valid. Entry permitted</span></div>
+      </div></div></div>
+      <div class="ha" style="left:150px;top:196px;z-index:8"><div class="float" style="--fd:1.6s"><div class="card a" style="--n:5;display:flex;gap:10px;align-items:center;padding:9px 13px;border-radius:14px">
+        <span class="ico" style="width:34px;height:34px;font-size:16px;background:var(--ink);color:#fff"><svg class="i"><use href="#i-ticket"/></svg></span><div><div class="s-sub">Seats left</div><b class="tnum" id="hero-left" style="font-size:18px;font-weight:700">128</b></div></div></div></div>
+      <div class="ha" style="right:196px;top:-4px;z-index:3"><div class="float" style="--fd:1.4s"><div class="card a" style="--n:6;padding:6px 13px;border-radius:99px;font-size:10.5px;font-weight:700;display:flex;gap:7px;align-items:center"><svg class="i"><use href="#i-sun"/></svg>Summer Camp</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROBLEM -->
+<section class="slide" id="problem" data-title="The challenge">
+  <div class="s-body">
+    <div class="kick a">The challenge</div>
+    <h2 class="t2 a" style="--n:1">What happens when events run on chat groups?</h2>
+    <div class="p-grid">
+      <div class="p-col a" style="--n:2"><div class="p-art"><div class="sheet" id="sheet"><span class="sheet-tag">Left: ???</span></div></div><div class="p-num">01</div><h3>Paper and chat sign-ups</h3><p>Forms, messages and spreadsheets make it hard to know how many seats are really left.</p></div>
+      <div class="p-col a" style="--n:3"><div class="p-art"><div class="chan"><div class="src"><span>Online</span><span>Front desk</span></div><svg class="i" style="font-size:18px;color:var(--grey)"><use href="#i-arrow-right"/></svg><div class="over"><b>406</b><small>booked of 400</small></div></div></div><div class="p-num">02</div><h3>Two ways to book</h3><p>Online and front desk lists drift apart, so the same seat can be promised twice.</p></div>
+      <div class="p-col a" style="--n:4"><div class="p-art"><div class="queue"><div class="people" id="people"></div><div class="desk"><svg class="i"><use href="#i-clipboard"/></svg></div></div></div><div class="p-num">03</div><h3>Crowded entrance</h3><p>Checking names by hand slows families down and makes a pass used twice hard to spot.</p></div>
+      <div class="p-col a" style="--n:5"><div class="p-art"><div class="wifi-art"><i></i><i></i><svg class="i"><use href="#i-wifi-off"/></svg></div></div><div class="p-num">04</div><h3>Patchy Wi-Fi</h3><p>A weak signal can stop online checks right when families arrive.</p></div>
+      <div class="p-col a" style="--n:6"><div class="p-art"><div class="boards"><div><small>Annual Day</small><b>320</b></div><div><small>Camp</small><b>145</b></div><div><small>Workshop</small><b>88</b></div></div></div><div class="p-num">05</div><h3>Many events, no overview</h3><p>Bookings and attendance sit in different places, with no single view across events.</p></div>
+    </div>
+    <div class="p-foot a" style="--n:7"><span>There is a simpler way.</span><button class="btn dark" data-go="next">See the solution <svg class="i"><use href="#i-arrow-right"/></svg></button></div>
+  </div>
+</section>
+
+<!-- 3. HUB -->
+<section class="slide" id="solution" data-title="The solution">
+  <div class="s-body">
+    <div class="kick a">The solution</div>
+    <h2 class="t2 a" style="--n:1">One connected platform. Every event covered.</h2>
+    <div class="split" style="margin-top:6px">
+      <div class="hub a" id="hub" style="--n:2"><svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" id="hub-lines"></svg><div class="hub-core"><div><svg class="i"><use href="#i-ticket"/></svg>One<br>Platform</div></div></div>
+      <div class="hub-info a" id="hub-info" style="--n:3" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 3b. YOUR EVENTS -->
+<section class="slide" id="yours" data-title="Made for your school">
+  <div class="s-body">
+    <div class="kick a">Made for The Green Turtle</div>
+    <h2 class="t2 a" style="--n:1;max-width:980px">From toddler workshops to summer camps, one way to book.</h2>
+    <p class="p a" style="--n:2;max-width:760px;margin-top:12px">Your programmes already include Parent Toddler, Playgroup, Nursery, Junior and Senior Kindergarten, Daycare, Afterschool Enrichment and Summer Camps. Here is where a shared booking and entry system can help.</p>
+    <div class="ev-grid">
+      <div class="ev-card a" style="--n:3"><span class="ico"><svg class="i"><use href="#i-sun"/></svg></span><h3>Summer Camps</h3><p>Batches by week and age group, seat limits, sibling packs and a waiting list.</p><span class="tag">Camp seats</span></div>
+      <div class="ev-card a" style="--n:4"><span class="ico"><svg class="i"><use href="#i-heart"/></svg></span><h3>Annual Day and celebrations</h3><p>Family passes, guest passes and a quick QR check at the door. Milestones such as your Gold Anniversary fit here too.</p><span class="tag">Family passes</span></div>
+      <div class="ev-card a" style="--n:5"><span class="ico"><svg class="i"><use href="#i-book"/></svg></span><h3>Parent and toddler workshops</h3><p>Montessori at home, music and movement, art and craft. Parents pick a slot and pay online.</p><span class="tag">Workshop seats</span></div>
+      <div class="ev-card a" style="--n:6"><span class="ico"><svg class="i"><use href="#i-door"/></svg></span><h3>Admission open house</h3><p>Prospective parents book a campus tour slot. Your team sees who is coming and when.</p><span class="tag">Tour slots</span></div>
+      <div class="ev-card a" style="--n:7"><span class="ico"><svg class="i"><use href="#i-users"/></svg></span><h3>Afterschool enrichment</h3><p>Trial classes and term sign-ups, with class sizes that never go over.</p><span class="tag">Class places</span></div>
+      <div class="ev-card a" style="--n:8"><span class="ico"><svg class="i"><use href="#i-calendar"/></svg></span><h3>Festivals and fun fairs</h3><p>Entry passes, stall coupons and a live headcount for the day.</p><span class="tag">Day passes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SECTION 01 -->
+<section class="slide sec teal" id="sec1" data-title="Part 1: The journey">
+  <div class="sec-num" aria-hidden="true">01</div>
+  <div class="s-body sec-body"><h2 class="t1 a">From first click<br>to final entry</h2><p class="p a" style="--n:1">Six simple steps, one connected flow.</p></div>
+</section>
+
+<!--STEPS-->
+
+<!-- SECTION 02 -->
+<section class="slide sec blue" id="sec2" data-title="Part 2: Selling tickets">
+  <div class="sec-num" aria-hidden="true">02</div>
+  <div class="s-body sec-body"><h2 class="t1 a">One list of seats,<br>every way to book</h2><p class="p a" style="--n:1">Online and front desk bookings share the same count.</p></div>
+</section>
+
+<!-- INVENTORY -->
+<section class="slide" id="inventory" data-title="One shared stock">
+  <div class="s-body">
+    <div class="split" style="align-items:start;gap:64px">
+      <div class="inv-left">
+        <div class="kick a">Shared seat list <span class="note">&nbsp;Illustrative demonstration data</span></div>
+        <h2 class="t2 a" style="--n:1">Book online and at the front desk without losing track.</h2>
+        <div class="stock-big a" style="--n:2"><b class="tnum" id="inv-left">400</b><span>seats remaining<br>of 400</span></div>
+        <div class="stack-bar a" style="--n:3" role="img" aria-label="Online, front desk and remaining seats"><i class="sb-o" id="sb-o"></i><i class="sb-c" id="sb-c"></i><i class="sb-l" id="sb-l"></i></div>
+        <div class="legend a" style="--n:3"><span><i style="background:var(--navy)"></i>Online <b class="tnum" id="lg-o">0</b></span><span><i style="background:var(--coral)"></i>Front desk <b class="tnum" id="lg-c">0</b></span><span><i style="background:var(--track)"></i>Remaining <b class="tnum" id="lg-l">0</b></span></div>
+        <div class="sell-row a" style="--n:4"><button class="sell-btn" id="sell-o"><span>Parent books online<small>On your website</small></span><span class="plus">+20</span></button><button class="sell-btn" id="sell-c"><span>Front desk booking<small>Staff book at reception</small></span><span class="plus">+10</span></button></div>
+        <div class="inv-actions a" style="--n:5"><button class="btn line sm" id="race-btn">Two parents, one last seat</button><button class="btn line sm" id="inv-reset">Reset demo</button></div>
+        <div class="toast a" style="--n:5" id="inv-toast" aria-live="polite"><svg class="i"><use href="#i-sync"/></svg><span id="inv-msg">Choose a pass type, then try a booking.</span></div>
+      </div>
+      <div>
+        <div class="kick a" style="--n:2">By pass type <span class="note">&nbsp;Select one to book from</span></div>
+        <div class="rings a" id="rings" style="--n:3"></div>
+        <div class="race a" id="race" style="--n:4" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 03 -->
+<section class="slide sec coral" id="sec3" data-title="Part 3: Event day">
+  <div class="sec-num" aria-hidden="true">03</div>
+  <div class="s-body sec-body"><h2 class="t1 a">A calm entrance,<br>even on a weak signal</h2><p class="p a" style="--n:1">Checks, gates and a plan for when things go wrong.</p></div>
+</section>
+
+<!-- OFFLINE -->
+<section class="slide" id="offline" data-title="Offline entry">
+  <div class="s-body">
+    <div class="split" style="align-items:start;gap:56px">
+      <div class="off-left">
+        <div class="kick a">Prepared for patchy campus Wi-Fi</div>
+        <h2 class="t2 a" style="--n:1">Entry keeps moving, even when the internet does not.</h2>
+        <div class="toggle a" style="--n:2" role="group" aria-label="Connection scenario"><button class="on" id="m-on" aria-pressed="true"><svg class="i"><use href="#i-wifi"/></svg> Connected</button><button id="m-off" aria-pressed="false"><svg class="i"><use href="#i-wifi-off"/></svg> No internet</button><button id="m-lan" aria-pressed="false"><svg class="i"><use href="#i-alert"/></svg> Campus network down</button></div>
+        <div class="chips a" style="--n:3" id="chips" aria-live="polite"></div>
+        <div class="net-panel a" style="--n:4" id="net-panel" aria-live="polite"></div>
+      </div>
+      <div class="a" style="--n:2">
+        <div class="net-diagram is-on" id="net" role="img" aria-label="Diagram of the central system, the local coordination device and three entrances">
+          <svg class="links" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <line class="net-link up" x1="50" y1="22" x2="50" y2="40" vector-effect="non-scaling-stroke"/>
+            <line class="net-link lan" x1="50" y1="62" x2="20" y2="72" vector-effect="non-scaling-stroke"/>
+            <line class="net-link lan" x1="50" y1="62" x2="50" y2="72" vector-effect="non-scaling-stroke"/>
+            <line class="net-link lan" x1="50" y1="62" x2="80" y2="72" vector-effect="non-scaling-stroke"/>
+          </svg>
+          <div class="n-node cloud" style="left:50%;top:13%"><div class="n-box"><svg class="i"><use href="#i-cloud"/></svg></div><small>Central system</small></div>
+          <div class="net-state" id="net-state">Connected</div>
+          <div class="n-node hubn" style="left:50%;top:50%"><div class="n-box"><svg class="i"><use href="#i-laptop"/></svg></div><small>Local coordination</small></div>
+          <div class="n-node scanner" style="left:20%;top:82%"><div class="n-box"><svg class="i"><use href="#i-scan"/></svg></div><small>Gate 1</small></div>
+          <div class="n-node scanner" style="left:50%;top:82%"><div class="n-box"><svg class="i"><use href="#i-scan"/></svg></div><small>Gate 2</small></div>
+          <div class="n-node scanner" style="left:80%;top:82%"><div class="n-box"><svg class="i"><use href="#i-scan"/></svg></div><small>Gate 3</small></div>
+        </div>
+        <div class="log-strip"><div class="row"><span id="log-label">Entries verified today</span><b class="tnum" id="log-count">0</b></div><div class="sync-track"><i id="sync-bar"></i></div></div>
+        <div class="honest"><svg class="i"><use href="#i-alert"/></svg><div>Needs a campus network, a local coordination device and the guest list loaded in advance. Set up and tested before every event. This is a demonstration, not a deployed system.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GATES -->
+<section class="slide" id="gates" data-title="Multiple gates">
+  <div class="s-body">
+    <div class="kick a">Multiple gates, one event</div>
+    <h2 class="t2 a" style="--n:1">Many entrances. One shared record.</h2>
+    <div class="gates-split">
+      <div class="venue a" style="--n:2">
+        <svg viewBox="0 0 800 420" role="img" aria-label="Top view of a campus with three entrances, scanning staff and families walking in">
+          <rect x="0" y="0" width="800" height="420" rx="18" style="fill:var(--soft)"/>
+          <rect x="40" y="24" width="720" height="262" rx="26" fill="#fff" style="stroke:var(--ink)" stroke-opacity=".7" stroke-width="2"/>
+          <text x="400" y="100" text-anchor="middle" font-family="Sora, sans-serif" font-weight="600" font-size="26" style="fill:var(--ink)">Event hall</text>
+          <g transform="translate(400 150)"><rect x="-70" y="-16" width="140" height="30" rx="15" style="fill:var(--teal)"/><text y="5" text-anchor="middle" font-family="Sora, sans-serif" font-weight="600" font-size="12" fill="#fff">Local coordination</text></g>
+          <g style="fill:var(--soft)"><rect x="126" y="276" width="88" height="22"/><rect x="356" y="276" width="88" height="22"/><rect x="586" y="276" width="88" height="22"/></g>
+          <g font-family="Sora, sans-serif" font-weight="600" font-size="12" text-anchor="middle">
+            <g transform="translate(170 226)"><rect x="-34" y="-14" width="68" height="25" rx="12.5" style="fill:var(--ink)"/><text y="3" fill="#fff">Gate 1</text></g>
+            <g transform="translate(400 226)"><rect x="-34" y="-14" width="68" height="25" rx="12.5" style="fill:var(--ink)"/><text y="3" fill="#fff">Gate 2</text></g>
+            <g transform="translate(630 226)"><rect x="-34" y="-14" width="68" height="25" rx="12.5" style="fill:var(--ink)"/><text y="3" fill="#fff">Gate 3</text></g>
+          </g>
+          <g id="staff"></g><g id="crowd"></g>
+          <text x="24" y="410" font-family="Sora, sans-serif" font-weight="500" font-size="12" style="fill:var(--grey)">Outside the school gate</text>
+        </svg>
+      </div>
+      <div class="gate-lab a" style="--n:3">
+        <div class="gl-top"><div><small>Try it with pass</small><b class="mono">GT-2048</b></div><span class="pill" id="tk-status">Not used yet</span></div>
+        <div class="gl-btns" role="group" aria-label="Scan the pass at an entrance"><button class="btn dark sm" data-gate="1">Scan at Gate 1</button><button class="btn dark sm" data-gate="2">Scan at Gate 2</button><button class="btn dark sm" data-gate="3">Scan at Gate 3</button></div>
+        <div class="result-lt" id="gate-result" aria-live="polite"><svg class="i"><use href="#i-scan"/></svg><div>Pick a gate to scan the pass<small>Then try a second gate.</small></div></div>
+        <div class="gl-net toggle" role="group" aria-label="Campus network"><button class="on" id="lan-up" aria-pressed="true">Gates share records</button><button id="lan-down" aria-pressed="false">Campus network down</button></div>
+        <div class="g-counts"><div><small>Seats booked</small><b class="tnum">400</b></div><div class="hl2"><small>Arrived</small><b class="tnum" id="gt">130</b></div><div><small id="g-extra-l">Still to come</small><b class="tnum" id="g-extra">270</b></div></div>
+        <div class="gl-foot"><span class="note">Illustrative demonstration data. Gate counts: <b id="gc-line" class="tnum"></b></span><button class="link-btn" id="gate-reset">Reset</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section class="slide" id="control" data-title="Control centre">
+  <div class="s-body">
+    <div class="dash-head">
+      <div><div class="kick a">Your control centre</div><h2 class="t2 a" style="--n:1;font-size:34px">Every event, in one clear view.</h2></div>
+      <span class="pill dark a" style="--n:2">Illustrative sample data</span>
+    </div>
+    <div class="dash a" style="--n:2"><div class="ev-list" id="ev-list"></div><div class="dash-main" id="dash-main"></div></div>
+  </div>
+</section>
+
+<!-- CUSTOMER -->
+<section class="slide" id="customer" data-title="Customer experience">
+  <div class="s-body">
+    <div class="cx">
+      <div class="cx-phone-wrap a" style="--n:1"><div class="phone"><div class="phone-screen" id="cx-screen"></div></div></div>
+      <div class="cx-right">
+        <div class="kick a">The parent's journey</div>
+        <div class="cx-now a" style="--n:1" aria-live="polite"><div class="cx-no tnum" id="cx-no">01</div><h2 class="t2" id="cx-title"></h2><p class="p" id="cx-desc"></p></div>
+        <div class="cx-phases a" style="--n:2" id="cx-phases"></div>
+        <div class="cx-segs a" style="--n:3" id="cx-dots" role="group" aria-label="Choose a screen"></div>
+        <div class="cx-ctrls a" style="--n:3"><button class="nav-btn" id="cx-prev" aria-label="Previous screen"><svg class="i"><use href="#i-chevron-left"/></svg></button><button class="nav-btn" id="cx-play" aria-label="Pause autoplay"><svg class="i"><use href="#i-pause"/></svg></button><button class="nav-btn" id="cx-next" aria-label="Next screen"><svg class="i"><use href="#i-chevron-right"/></svg></button><span class="note">No real payment is made in this demonstration.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="slide" id="benefits" data-title="Business benefits">
+  <div class="s-body">
+    <div class="kick a">Business benefits</div>
+    <h2 class="t2 a" style="--n:1;max-width:900px">More time for teaching. A smoother day for families.</h2>
+    <div class="b-grid" id="b-grid"></div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="slide" id="roadmap" data-title="Implementation approach">
+  <div class="s-body">
+    <div class="kick a">Implementation approach</div>
+    <h2 class="t2 a" style="--n:1">Five stages, milestone by milestone.</h2>
+    <div class="stages a" id="stages" style="--n:2" role="tablist" aria-label="Implementation stages"></div>
+    <div class="stage-detail a" id="stage-detail" style="--n:3" role="tabpanel" aria-live="polite"></div>
+    <div class="road-note a" style="--n:4"><svg class="i"><use href="#i-calendar"/></svg><span>We confirm the schedule after a requirements discussion and your approval of the scope. No delivery dates are promised before that.</span></div>
+  </div>
+</section>
+
+<!-- COST -->
+<section class="slide" id="cost" data-title="Cost approach">
+  <div class="s-body">
+    <div class="kick a">A cost-conscious approach</div>
+    <h2 class="t2 a" style="--n:1">Free where we can. Honest where we cannot.</h2>
+    <div class="cost-split">
+      <div class="stat a" style="--n:2"><div class="num teal">₹0</div><h3>Software licensing, wherever feasible</h3>
+        <p class="p" style="margin-top:14px">We prioritise free and open-source software wherever practical. Hosting, equipment, payment processing and third-party services may still carry costs.</p></div>
+      <div class="cost-grid a" style="--n:3" id="cost-grid"></div>
+    </div>
+    <div class="road-note a" style="--n:4"><svg class="i"><use href="#i-search"/></svg><span>Final pricing is confirmed after we assess your requirements and campus infrastructure. Nothing here is a quote.</span></div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="slide" id="about" data-title="About AzeelaAI Labs">
+  <div class="s-body">
+    <div class="kick a">Who we are</div>
+    <h2 class="t2 a" style="--n:1">AzeelaAI Labs, building practical software with AI.</h2>
+    <div class="cost-split">
+      <div class="stat a" style="--n:2"><div class="num teal">2023</div><h3>Founded in Richardson, Texas</h3>
+        <p class="p" style="margin-top:14px">We are an AI products and services company. We build working software for real businesses, and we explain every step in plain language.</p></div>
+      <div class="cost-grid a" style="--n:3">
+        <div class="cost-card"><b>01</b><h3>Software</h3><p>Web platforms, booking and workflow tools, built and maintained end to end.</p></div>
+        <div class="cost-card"><b>02</b><h3>AI and machine learning</h3><p>Helpful assistants and automation, added only where they save your team time.</p></div>
+        <div class="cost-card"><b>03</b><h3>Data</h3><p>Clear reports and dashboards, so decisions rest on real numbers.</p></div>
+        <div class="cost-card"><b>04</b><h3>Consulting</h3><p>A careful look at what you need first, then a plan you can say yes or no to.</p></div>
+      </div>
+    </div>
+    <div class="road-note a" style="--n:4"><svg class="i"><use href="#i-heart"/></svg><span>Our promise to The Green Turtle: simple tools your team can use on day one, and honest answers about cost and effort.</span></div>
+  </div>
+</section>
+
+<!-- NEEDS -->
+<section class="slide" id="needs" data-title="What we need from you">
+  <div class="s-body">
+    <div class="kick a">Before we begin</div>
+    <h2 class="t2 a" style="--n:1">What we would like to learn from you.</h2>
+    <div class="needs-grid" id="needs-grid"></div>
+  </div>
+</section>
+
+<!-- THE ASK -->
+<section class="slide" id="ask" data-title="The ask">
+  <div class="s-body">
+    <div class="kick a">The ask</div>
+    <h2 class="t2 a" style="--n:1;max-width:920px">A small yes this week. A pilot on one upcoming event.</h2>
+    <div class="ask-grid">
+      <div class="ask-card a" style="--n:2">
+        <b>01</b>
+        <h3>This week</h3>
+        <p>A 45-minute working session on your event calendar, how families book today, and what “done” looks like for a first pilot.</p>
+      </div>
+      <div class="ask-card a" style="--n:3">
+        <b>02</b>
+        <h3>First scope</h3>
+        <p>One live event — for example Annual Day or a Summer Camp week — with online booking, front desk booking, QR entry and a simple live view.</p>
+      </div>
+      <div class="ask-card a" style="--n:4">
+        <b>03</b>
+        <h3>Rough shape</h3>
+        <p>Discovery, then a build for that pilot, campus prep, a test weekend, and staff walkthrough before go-live. Dates locked only after we agree the scope.</p>
+      </div>
+      <div class="ask-card a" style="--n:5">
+        <b>04</b>
+        <h3>From you</h3>
+        <p>A point of contact, access to the current website approach, and clarity on pass types, payments and how many entrances you expect on the day.</p>
+      </div>
+    </div>
+    <div class="ask-foot a" style="--n:6">
+      <span>Nothing here is a quote. We confirm effort and cost after that first conversation.</span>
+      <button class="btn dark" data-go="closing">See the close <svg class="i"><use href="#i-arrow-right"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="slide navy" id="closing" data-title="Next steps">
+  <div class="s-body close-body">
+    <h2 class="t1 a">Let's make every event<br><span class="outline">a joy to run.</span></h2>
+    <p class="p a" style="--n:1">From the first booking to the last family walking in, bring The Green Turtle's events together through one connected experience.</p>
+    <ol class="miles a" style="--n:2"><li><b>01</b>Talk through your events and goals</li><li><b>02</b>Agree a small first scope</li><li><b>03</b>Pilot with one upcoming event</li></ol>
+    <div class="btns a" style="--n:3"><a class="btn white" id="cta" href="#">Let's discuss the next steps <svg class="i"><use href="#i-arrow-right"/></svg></a></div>
+    <div class="prep a" style="--n:4" id="prep"></div>
+  </div>
+</section>
+
+    </main>
+  </div>
+
+  <footer class="d-bottom">
+    <span class="d-hint">Arrows / Space · O slides · N notes · B blackout · P pointer · F full screen</span>
+    <div class="d-nav"><button class="nav-btn" id="prev" aria-label="Previous slide"><svg class="i"><use href="#i-chevron-left"/></svg></button><button class="nav-btn" id="next" aria-label="Next slide"><svg class="i"><use href="#i-chevron-right"/></svg></button></div>
+  </footer>
+</div>
+
+<div class="overview" id="overview" role="dialog" aria-label="All slides"><button class="tool ov-close" id="ov-close">Close</button><h2>All slides</h2><div class="ov-grid" id="ov-grid"></div></div>
+<div class="blackout" id="blackout" hidden aria-hidden="true"><span>Blackout · press B</span></div>
+<div class="spot" id="spot" hidden aria-hidden="true"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
